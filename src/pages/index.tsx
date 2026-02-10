@@ -15,6 +15,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { motion } from "motion/react";
 
 export default function Home() {
   return (
@@ -93,12 +94,14 @@ export default function Home() {
             icon={<Rotate3d size={28} />}
             title="SketchUp"
             description="Modelagem 3D e visualização de projetos arquitetônicos"
+            delay={0.3}
           />
 
           <CardTool
             icon={<Bot size={28} />}
             title="Inteligência Artificial"
             description="Ferramanetas de IA aplicadas ao processo de projeto"
+            delay={0.6}
           />
         </div>
       </section>
@@ -204,9 +207,9 @@ export default function Home() {
 
             <div className="flex flex-row gap-2">
               <LabelItem text="Biofilia" />
-              <LabelItem text="Madeira Cumaru" />
-              <LabelItem text="Ventilação Natural" />
-              <LabelItem text="Acessibilidade" />
+              <LabelItem text="Madeira Cumaru" delay={0.2} />
+              <LabelItem text="Ventilação Natural" delay={0.4} />
+              <LabelItem text="Acessibilidade" delay={0.6} />
             </div>
           </div>
         </div>
