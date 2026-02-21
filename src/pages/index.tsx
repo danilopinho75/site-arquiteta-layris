@@ -104,7 +104,11 @@ export default function Home() {
             style={{ backgroundImage: `url(${Layris.src})` }}
             className="w-full h-96 rounded-lg bg-cover bg-center bg-no-repeat
             hover:scale-105 hover:drop-shadow-2xl hover:border-4 hover:border-white transition-all duration-500 sm:h-150 lg:max-w-md lg:h-auto lg:mt-0"
-          />
+          >
+            <div className="px-4 py-2 bg-orange-100 rounded-2xl relative top-3 left-3 w-fit border-2 border-orange-500 shadow-2xl shadow-orange-500">
+              <p className="text-orange-600 font-semibold text-xs animate-pulse">Layris Gorzoni</p>
+            </div>
+          </div>
         </section>
 
         <section className="flex flex-col p-10 bg-orange-50 text-stone-600 items-center gap-12 rounded-2xl md:p-20 lg:p-32">
