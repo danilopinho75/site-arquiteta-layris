@@ -24,7 +24,7 @@ export function CardTool({ icon, title, description, delay = 0 }: CardToolProps)
         >
           {icon}
         </div>
-        <h4 className="text-2xl text-stone-800">{title}</h4>
+        <h4 className="text-2xl text-stone-800 text-center">{title}</h4>
         <p className="text-center text-stone-600 font-light">{description}</p>
       </div>
     </motion.div>
