@@ -32,7 +32,7 @@ import { motion } from "motion/react";
 export default function Home() {
   return (
     <>
-      <main className="bg-white p-6 min-h-screen">
+      <main className="bg-stone-50 p-6 min-h-screen">
         <section
           style={{ backgroundImage: `url(${EntradaAmbulancia.src})` }}
           className="flex flex-col md:h-[calc(100vh-3rem)] justify-center px-10 py-30 text-orange-50 bg-cover bg-left sm:bg-center bg-no-repeat overflow-hidden relative rounded-2xl lg:px-32"
