@@ -15,6 +15,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { motion } from "motion/react";
 
 export default function Home() {
@@ -51,146 +52,227 @@ export default function Home() {
               CONHEÇA MEU TRABALHO
             </Link>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section className="flex flex-col p-32 bg-orange-50 text-stone-600 items-center gap-12">
-        <div className="flex flex-col gap-3 items-center">
-          <span className="text-orange-500">FERRAMENTAS</span>
-          <h2 className="text-5xl text-stone-800">Software & Habilidades</h2>
-        </div>
-
-        <div className="flex flex-row gap-10">
-          <CardTool
-            icon={<PencilLine size={28} />}
-            title="AutoCAD"
-            description="Desenho técnico e detalhamento de projetos exclusivos"
-          />
-
-          <CardTool
-            icon={<Rotate3d size={28} />}
-            title="SketchUp"
-            description="Modelagem 3D e visualização de projetos arquitetônicos"
-            delay={0.3}
-          />
-
-          <CardTool
-            icon={<Bot size={28} />}
-            title="Inteligência Artificial"
-            description="Ferramanetas de IA aplicadas ao processo de projeto"
-            delay={0.6}
-          />
-        </div>
-      </section>
-
-      <section className="flex flex-col gap-10 bg-stone-50 p-32 text-stone-500">
-        <div>
-          <span>PORTFÓLIO</span>
-          <h2 className="text-5xl text-stone-800">Projetos Acadêmicos</h2>
-        </div>
-
-        <div className="flex flex-row justify-between">
+        <section id="sobre" className="flex flex-row justify-between bg-stone-50 p-32 text-stone-500">
           <div>
-            <Carousel className="w-full max-w-lg">
-              <CarouselContent>
-                <CarouselItem>
-                  <Image
-                    src={FachadaUpa}
-                    alt="Fachada do projeto UPA 24h"
-                    className="w-full h-auto rounded-lg"
-                  />
-                </CarouselItem>
-
-                <CarouselItem>
-                  <Image
-                    src={PracaPublica}
-                    alt="Praça pública do projeto UPA 24h"
-                    className="w-full h-auto rounded-lg"
-                  />
-                </CarouselItem>
-
-                <CarouselItem>
-                  <Image
-                    src={EntradaAmbulancia}
-                    alt="Entrada de ambulância do projeto UPA 24h"
-                    className="w-full h-auto rounded-lg"
-                  />
-                </CarouselItem>
-
-                <CarouselItem>
-                  <Image
-                    src={EntradaCarro}
-                    alt="Entrada de carro do projeto UPA 24h"
-                    className="w-full h-auto rounded-lg"
-                  />
-                </CarouselItem>
-              </CarouselContent>
-
-              <CarouselPrevious
-                className="
-                bg-white text-stone-800 
-                hover:bg-stone-100
-                border border-stone-200
-              "
-              />
-              <CarouselNext
-              className="
-                bg-white text-stone-800 
-                hover:bg-stone-100
-                border border-stone-200
-              "
-              />
-            </Carousel>
+            <span className="text-lg">SOBRE MIM</span>
+            <h2 className="text-4xl font-light text-stone-800">
+              Trajetória Acadêmica
+            </h2>
           </div>
 
           <div className="flex flex-col gap-10 max-w-xl">
-            <span className="text-orange-500">PROJETO HOSPITALAR</span>
-            <h4 className="text-3xl text-stone-800">
-              UPA 24h - Pronto Atendimento
-            </h4>
             <p>
-              Unidade de Pronto Atendimento com área construída de{" "}
-              <b>3.990 m²</b>, localizada na Avenida Mário Clappier Urbanatti
-              Doutor, em Maringá – PR. A edificação está distribuída em cinco
-              pavilhões funcionais.
+              Iniciou a graduação na Universidade Unilago, em São José do Rio
+              Preto-SP, onde cursou do 1º ao 3º ano. Durante o 3º ano, realizou
+              parte dos estudos na Unoesc, em Chapecó-SC.
             </p>
 
             <p>
-              O projeto aplica o conceito de <b>arquitetura biofílica</b>,
-              integrando elementos da natureza ao ambiente construído para
-              promover bem-estar físico e mental de pacientes e colaboradores.
-            </p>
-
-            <p>
-              A paleta cromática é composta por tons de cinza, branco, marrom e
-              preto, com o uso de <b>madeira Cumaru</b>, metalon preto e
-              vegetação integrada, criando uma atmosfera acolhedora e
-              humanizada.
+              No 4º ano, deu continuidade à formação na FEITEP, em Maringá-PR,
+              transferindo-se no segundo semestre para a Uningá, instituição
+              onde atualmente conclui o curso.
             </p>
 
             <span className="w-full h-px bg-stone-300"></span>
 
-            <div className="flex flex-row gap-20">
-              <div className="flex flex-col gap-2">
-                <h4 className="text-3xl">3.990 m²</h4>
-                <p className="text-xs">ÁREA CONSTRUÍDA</p>
-              </div>
-
-              <div className="flex flex-col gap-2">
-                <h4 className="text-3xl">5</h4>
-                <p className="text-xs">PAVILHÕES</p>
-              </div>
-            </div>
-
-            <div className="flex flex-row gap-2">
-              <LabelItem text="Biofilia" />
-              <LabelItem text="Madeira Cumaru" delay={0.2} />
-              <LabelItem text="Ventilação Natural" delay={0.4} />
-              <LabelItem text="Acessibilidade" delay={0.6} />
+            <div className="flex flex-col gap-3">
+              <h4 className="text-2xl text-stone-800">Áreas de interesse</h4>
+              <p>
+                Design de fachadas, design de interiores e paisagismo, com
+                interesse no desenvolvimento de mobiliário, explorando soluções
+                funcionais, estéticas e integradas ao contexto arquitetônico.
+              </p>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+
+        <section className="flex flex-col p-32 bg-orange-50 text-stone-600 items-center gap-12">
+          <div className="flex flex-col gap-3 items-center">
+            <span className="text-orange-500">FERRAMENTAS</span>
+            <h2 className="text-5xl text-stone-800">Software & Habilidades</h2>
+          </div>
+
+          <div className="flex flex-row gap-10">
+            <CardTool
+              icon={<PencilLine size={28} />}
+              title="AutoCAD"
+              description="Desenho técnico e detalhamento de projetos exclusivos"
+            />
+
+            <CardTool
+              icon={<Rotate3d size={28} />}
+              title="SketchUp"
+              description="Modelagem 3D e visualização de projetos arquitetônicos"
+              delay={0.3}
+            />
+
+            <CardTool
+              icon={<Bot size={28} />}
+              title="Inteligência Artificial"
+              description="Ferramanetas de IA aplicadas ao processo de projeto"
+              delay={0.6}
+            />
+          </div>
+        </section>
+
+        <section className="flex flex-col gap-10 bg-stone-50 p-32 text-stone-500">
+          <Tabs
+            defaultValue="hospitalar"
+            className="w-full flex flex-col gap-10 text-stone-500"
+          >
+            <div className="flex flex-row justify-between items-center">
+              <div className="flex flex-col">
+                <span>PORTFÓLIO</span>
+                <h2 className="text-5xl text-stone-800">Projetos Acadêmicos</h2>
+              </div>
+              <TabsList className="opacity-100 bg-stone-100 w-fit">
+                <TabsTrigger
+                  value="hospitalar"
+                  className="text-stone-400 hover:text-orange-600 data-[state=active]:bg-orange-600"
+                >
+                  Projeto Hospitalar
+                </TabsTrigger>
+                <TabsTrigger
+                  value="residencial"
+                  className="text-stone-400 hover:text-orange-600 data-[state=active]:bg-orange-600"
+                >
+                  Residencial
+                </TabsTrigger>
+                <TabsTrigger
+                  value="urbanismo"
+                  className="text-stone-400  hover:text-orange-600 data-[state=active]:bg-orange-600"
+                >
+                  Parque Flamboyant
+                </TabsTrigger>
+              </TabsList>
+            </div>
+
+            {/* 🔽 hospitalar */}
+            <TabsContent value="hospitalar">
+              <div className="flex flex-row justify-between">
+                <div>
+                  <Carousel className="w-full max-w-lg">
+                    <CarouselContent>
+                      <CarouselItem>
+                        <Image
+                          src={FachadaUpa}
+                          alt="Fachada do projeto UPA 24h"
+                          className="w-full h-auto rounded-lg"
+                        />
+                      </CarouselItem>
+
+                      <CarouselItem>
+                        <Image
+                          src={PracaPublica}
+                          alt="Praça pública do projeto UPA 24h"
+                          className="w-full h-auto rounded-lg"
+                        />
+                      </CarouselItem>
+
+                      <CarouselItem>
+                        <Image
+                          src={EntradaAmbulancia}
+                          alt="Entrada de ambulância do projeto UPA 24h"
+                          className="w-full h-auto rounded-lg"
+                        />
+                      </CarouselItem>
+
+                      <CarouselItem>
+                        <Image
+                          src={EntradaCarro}
+                          alt="Entrada de carro do projeto UPA 24h"
+                          className="w-full h-auto rounded-lg"
+                        />
+                      </CarouselItem>
+                    </CarouselContent>
+
+                    <CarouselPrevious
+                      className="
+                bg-white text-stone-800 
+                hover:bg-stone-100
+                border border-stone-200
+              "
+                    />
+                    <CarouselNext
+                      className="
+                bg-white text-stone-800 
+                hover:bg-stone-100
+                border border-stone-200
+              "
+                    />
+                  </Carousel>
+                </div>
+
+                <div className="flex flex-col gap-10 max-w-xl">
+                  <span className="text-orange-500">PROJETO HOSPITALAR</span>
+                  <h4 className="text-3xl text-stone-800">
+                    UPA 24h - Pronto Atendimento
+                  </h4>
+                  <p>
+                    Unidade de Pronto Atendimento com área construída de{" "}
+                    <b>3.990 m²</b>, localizada na Avenida Mário Clappier
+                    Urbanatti Doutor, em Maringá – PR. A edificação está
+                    distribuída em cinco pavilhões funcionais.
+                  </p>
+
+                  <p>
+                    O projeto aplica o conceito de <b>arquitetura biofílica</b>,
+                    integrando elementos da natureza ao ambiente construído para
+                    promover bem-estar físico e mental de pacientes e
+                    colaboradores.
+                  </p>
+
+                  <p>
+                    A paleta cromática é composta por tons de cinza, branco,
+                    marrom e preto, com o uso de <b>madeira Cumaru</b>, metalon
+                    preto e vegetação integrada, criando uma atmosfera
+                    acolhedora e humanizada.
+                  </p>
+
+                  <span className="w-full h-px bg-stone-300"></span>
+
+                  <div className="flex flex-row gap-20">
+                    <div className="flex flex-col gap-2">
+                      <h4 className="text-3xl">3.990 m²</h4>
+                      <p className="text-xs">ÁREA CONSTRUÍDA</p>
+                    </div>
+
+                    <div className="flex flex-col gap-2">
+                      <h4 className="text-3xl">5</h4>
+                      <p className="text-xs">PAVILHÕES</p>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-row gap-2">
+                    <LabelItem text="Biofilia" />
+                    <LabelItem text="Madeira Cumaru" delay={0.2} />
+                    <LabelItem text="Ventilação Natural" delay={0.4} />
+                    <LabelItem text="Acessibilidade" delay={0.6} />
+                  </div>
+                </div>
+              </div>
+            </TabsContent>
+
+            {/* 🔽 CONTEÚDO 2 */}
+            <TabsContent value="residencial">
+              <div className="flex flex-row justify-between">
+                <h3>Projeto Residencial</h3>
+                {/* conteúdo residencial */}
+              </div>
+            </TabsContent>
+
+            {/* 🔽 CONTEÚDO 3 */}
+            <TabsContent value="urbanismo">
+              <div className="flex flex-row justify-between">
+                <h3>Projeto de Urbanismo</h3>
+                {/* conteúdo urbanismo */}
+              </div>
+            </TabsContent>
+          </Tabs>
+        </section>
+      </main>
 
       <Footer />
     </>
