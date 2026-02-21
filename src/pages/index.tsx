@@ -2,12 +2,23 @@ import { Footer } from "@/components/footer";
 import Image from "next/image";
 import Link from "next/link";
 import { Bot, PencilLine, Rotate3d, ArrowUpRight } from "lucide-react";
+
 import { CardTool } from "@/components/cardTool";
 import { LabelItem } from "@/components/labelItem";
+
 import EntradaAmbulancia from "@/images/entrada-ambulancia.jpeg";
 import EntradaCarro from "@/images/entrada-de-carro.jpeg";
 import FachadaUpa from "@/images/fachada-upa.jpeg";
 import PracaPublica from "@/images/praca-publica.jpeg";
+import Layris from "@/images/layris.jpeg";
+import AreaChurrasco from "@/images/area-churrasco.jpeg";
+import FachadaCasa from "@/images/fachada-casa.jpeg";
+import QuartoCasa from "@/images/quarto.jpeg";
+import SalaCasa from "@/images/sala.jpeg";
+import Flamboyant1 from "@/images/flamboyant-1.jpeg";
+import Flamboyant2 from "@/images/flamboyant-2.jpeg";
+import Flamboyant3 from "@/images/flamboyant-3.jpeg";
+
 import {
   Carousel,
   CarouselContent,
@@ -24,11 +35,9 @@ export default function Home() {
       <main className="bg-white p-6 min-h-screen">
         <section
           style={{ backgroundImage: `url(${EntradaAmbulancia.src})` }}
-          className="flex flex-col h-[calc(100vh-3rem)] justify-center px-32 text-orange-50
-        bg-cover bg-center bg-no-repeat overflow-hidden relative rounded-2xl
-      "
+          className="flex flex-col h-[calc(100vh-3rem)] justify-center px-32 text-orange-50 bg-cover bg-center bg-no-repeat overflow-hidden relative rounded-2xl"
         >
-          <div className="absolute inset-0 bg-linear-to-b from-black/20 to-black/100 overflow-hidden" />
+          <div className="absolute inset-0 bg-linear-to-b from-black/20 to-black overflow-hidden" />
 
           <div className="flex z-1 flex-col gap-5 max-w-xl">
             <span className="text-lg text-orange-200">
@@ -48,44 +57,54 @@ export default function Home() {
               href="/#sobre"
               className="flex flex-row gap-2 items-center text-white font-semibold bg-orange-500 px-6 py-4 rounded-lg w-max hover:bg-orange-600 transition-all duration-400 hover:-translate-y-1"
             >
-              <ArrowUpRight size={18} />
+              <ArrowUpRight size={18} className="animate-pulse" />
               CONHEÇA MEU TRABALHO
             </Link>
           </div>
         </section>
 
-        <section id="sobre" className="flex flex-row justify-between bg-stone-50 p-32 text-stone-500">
+        <section
+          id="sobre"
+          className="flex flex-row justify-between bg-stone-50 p-32 text-stone-500"
+        >
           <div>
             <span className="text-lg">SOBRE MIM</span>
             <h2 className="text-4xl font-light text-stone-800">
               Trajetória Acadêmica
             </h2>
-          </div>
 
-          <div className="flex flex-col gap-10 max-w-xl">
-            <p>
-              Iniciou a graduação na Universidade Unilago, em São José do Rio
-              Preto-SP, onde cursou do 1º ao 3º ano. Durante o 3º ano, realizou
-              parte dos estudos na Unoesc, em Chapecó-SC.
-            </p>
-
-            <p>
-              No 4º ano, deu continuidade à formação na FEITEP, em Maringá-PR,
-              transferindo-se no segundo semestre para a Uningá, instituição
-              onde atualmente conclui o curso.
-            </p>
-
-            <span className="w-full h-px bg-stone-300"></span>
-
-            <div className="flex flex-col gap-3">
-              <h4 className="text-2xl text-stone-800">Áreas de interesse</h4>
+            <div className="flex flex-col gap-10 max-w-xl mt-10">
               <p>
-                Design de fachadas, design de interiores e paisagismo, com
-                interesse no desenvolvimento de mobiliário, explorando soluções
-                funcionais, estéticas e integradas ao contexto arquitetônico.
+                Iniciou a graduação na Universidade Unilago, em São José do Rio
+                Preto-SP, onde cursou do 1º ao 3º ano. Durante o 3º ano,
+                realizou parte dos estudos na Unoesc, em Chapecó-SC.
               </p>
+
+              <p>
+                No 4º ano, deu continuidade à formação na FEITEP, em Maringá-PR,
+                transferindo-se no segundo semestre para a Uningá, instituição
+                onde atualmente conclui o curso.
+              </p>
+
+              <span className="w-full h-px bg-stone-300"></span>
+
+              <div className="flex flex-col gap-3">
+                <h4 className="text-2xl text-stone-800">Áreas de interesse</h4>
+                <p>
+                  Design de fachadas, design de interiores e paisagismo, com
+                  interesse no desenvolvimento de mobiliário, explorando
+                  soluções funcionais, estéticas e integradas ao contexto
+                  arquitetônico.
+                </p>
+              </div>
             </div>
           </div>
+
+          <div
+            style={{ backgroundImage: `url(${Layris.src})` }}
+            className="w-full max-w-md h-auto rounded-lg bg-cover bg-center bg-no-repeat
+            hover:scale-105 hover:drop-shadow-2xl hover:border-4 hover:border-white transition-all duration-500"
+          />
         </section>
 
         <section className="flex flex-col p-32 bg-orange-50 text-stone-600 items-center gap-12">
@@ -117,6 +136,7 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Portfólio */}
         <section className="flex flex-col gap-10 bg-stone-50 p-32 text-stone-500">
           <Tabs
             defaultValue="hospitalar"
@@ -141,7 +161,7 @@ export default function Home() {
                   Residencial
                 </TabsTrigger>
                 <TabsTrigger
-                  value="urbanismo"
+                  value="flamboyant"
                   className="text-stone-400  hover:text-orange-600 data-[state=active]:bg-orange-600"
                 >
                   Parque Flamboyant
@@ -150,7 +170,7 @@ export default function Home() {
             </div>
 
             {/* 🔽 hospitalar */}
-            <TabsContent value="hospitalar">
+            <TabsContent value="hospitalar" className="mt-0 data-[state=active]:animate-in data-[state=active]:fade-in-0 data-[state=active]:slide-in-from-bottom-4 data-[state=active]:duration-500">
               <div className="flex flex-row justify-between">
                 <div>
                   <Carousel className="w-full max-w-lg">
@@ -188,20 +208,8 @@ export default function Home() {
                       </CarouselItem>
                     </CarouselContent>
 
-                    <CarouselPrevious
-                      className="
-                bg-white text-stone-800 
-                hover:bg-stone-100
-                border border-stone-200
-              "
-                    />
-                    <CarouselNext
-                      className="
-                bg-white text-stone-800 
-                hover:bg-stone-100
-                border border-stone-200
-              "
-                    />
+                    <CarouselPrevious className="bg-white text-stone-800 hover:bg-stone-100 border border-stone-200" />
+                    <CarouselNext className=" bg-white text-stone-800 hover:bg-stone-100 border border-stone-200" />
                   </Carousel>
                 </div>
 
@@ -256,18 +264,91 @@ export default function Home() {
             </TabsContent>
 
             {/* 🔽 CONTEÚDO 2 */}
-            <TabsContent value="residencial">
-              <div className="flex flex-row justify-between">
-                <h3>Projeto Residencial</h3>
-                {/* conteúdo residencial */}
+            <TabsContent value="residencial" className="mt-0 data-[state=active]:animate-in data-[state=active]:fade-in-0 data-[state=active]:slide-in-from-bottom-4 data-[state=active]:duration-500">
+              <div className="flex flex-row justify-between"> 
+                <div className="flex flex-col">
+                  <span className="text-orange-500">Casa</span>
+                  <h3 className="text-3xl text-stone-800">Projeto Residencial</h3>
+                </div>               
+                <Carousel className="w-full max-w-2xl">
+                  <CarouselContent>
+                    <CarouselItem>
+                      <Image
+                        src={FachadaCasa}
+                        alt="Fachada do projeto Casa"
+                        className="w-full h-auto rounded-lg"
+                      />
+                    </CarouselItem>
+
+                    <CarouselItem>
+                      <Image
+                        src={QuartoCasa}
+                        alt="Quarto do projeto Casa"
+                        className="w-full h-auto rounded-lg"
+                      />
+                    </CarouselItem>
+
+                    <CarouselItem>
+                      <Image
+                        src={SalaCasa}
+                        alt="Sala do projeto Casa"
+                        className="w-full h-auto rounded-lg"
+                      />
+                    </CarouselItem>
+
+                    <CarouselItem>
+                      <Image
+                        src={AreaChurrasco}
+                        alt="Área de churrasco do projeto Residencial"
+                        className="w-full h-auto rounded-lg"
+                      />
+                    </CarouselItem>
+                  </CarouselContent>
+
+                  <CarouselPrevious className="bg-white text-stone-800 hover:bg-stone-100 border border-stone-200" />
+                  <CarouselNext className=" bg-white text-stone-800 hover:bg-stone-100 border border-stone-200" />
+                </Carousel>
               </div>
             </TabsContent>
 
             {/* 🔽 CONTEÚDO 3 */}
-            <TabsContent value="urbanismo">
-              <div className="flex flex-row justify-between">
-                <h3>Projeto de Urbanismo</h3>
-                {/* conteúdo urbanismo */}
+            <TabsContent value="flamboyant" className="mt-0 data-[state=active]:animate-in data-[state=active]:fade-in-0 data-[state=active]:slide-in-from-bottom-4 data-[state=active]:duration-500">
+              <div className="flex flex-col gap-10 items-center">
+                <div className="flex flex-col gap-3 items-center">
+                  <span className="text-orange-500">Parque Flamboyant</span>
+                  <h3 className="text-3xl text-stone-800">Parque Flamboyant</h3>
+                </div>
+                {/* conteúdo flamboyant */}
+                <Carousel className="w-full">
+                  <CarouselContent>
+                    <CarouselItem>
+                      <Image
+                        src={Flamboyant1}
+                        alt=""
+                        className="w-full h-auto rounded-lg"
+                      />
+                    </CarouselItem>
+
+                    <CarouselItem>
+                      <Image
+                        src={Flamboyant2}
+                        alt=""
+                        className="w-full h-auto rounded-lg"
+                      />
+                    </CarouselItem>
+
+                    <CarouselItem>
+                      <Image
+                        src={Flamboyant3}
+                        alt=""
+                        className="w-full h-auto rounded-lg"
+                      />
+                    </CarouselItem>
+                  </CarouselContent>
+
+                  <CarouselPrevious className="bg-white text-stone-800 hover:bg-stone-100 border border-stone-200" />
+                  <CarouselNext className=" bg-white text-stone-800 hover:bg-stone-100 border border-stone-200" />
+                </Carousel>
               </div>
             </TabsContent>
           </Tabs>
