@@ -35,7 +35,7 @@ export default function Home() {
       <main className="bg-white p-6 min-h-screen">
         <section
           style={{ backgroundImage: `url(${EntradaAmbulancia.src})` }}
-          className="flex flex-col h-[calc(100vh-3rem)] justify-center px-32 text-orange-50 bg-cover bg-center bg-no-repeat overflow-hidden relative rounded-2xl"
+          className="flex flex-col md:h-[calc(100vh-3rem)] justify-center px-10 py-30 text-orange-50 bg-cover bg-left sm:bg-center bg-no-repeat overflow-hidden relative rounded-2xl lg:px-32"
         >
           <div className="absolute inset-0 bg-linear-to-b from-black/20 to-black overflow-hidden" />
 
@@ -43,7 +43,7 @@ export default function Home() {
             <span className="text-lg text-orange-200">
               ARQUITETURA & URBANISMO
             </span>
-            <h1 className="text-8xl font-light text-stone-50">
+            <h1 className="text-7xl md:text-8xl font-light text-stone-50">
               Layris
               <br />
               <span className="font-light italic">Gorzoni</span>
@@ -65,7 +65,7 @@ export default function Home() {
 
         <section
           id="sobre"
-          className="flex flex-row justify-between bg-stone-50 p-32 text-stone-500"
+          className="flex flex-col gap-10 bg-stone-50 px-10 py-20 text-stone-500 lg:flex-row md:p-20 lg:p-32 lg:justify-between"
         >
           <div>
             <span className="text-lg">SOBRE MIM</span>
@@ -102,18 +102,18 @@ export default function Home() {
 
           <div
             style={{ backgroundImage: `url(${Layris.src})` }}
-            className="w-full max-w-md h-auto rounded-lg bg-cover bg-center bg-no-repeat
-            hover:scale-105 hover:drop-shadow-2xl hover:border-4 hover:border-white transition-all duration-500"
+            className="w-full h-96 rounded-lg bg-cover bg-center bg-no-repeat
+            hover:scale-105 hover:drop-shadow-2xl hover:border-4 hover:border-white transition-all duration-500 sm:h-150 lg:max-w-md lg:h-auto lg:mt-0"
           />
         </section>
 
-        <section className="flex flex-col p-32 bg-orange-50 text-stone-600 items-center gap-12">
+        <section className="flex flex-col p-10 bg-orange-50 text-stone-600 items-center gap-12 rounded-2xl md:p-20 lg:p-32">
           <div className="flex flex-col gap-3 items-center">
             <span className="text-orange-500">FERRAMENTAS</span>
-            <h2 className="text-5xl text-stone-800">Software & Habilidades</h2>
+            <h2 className="text-5xl text-stone-800 text-center leading-14">Software & Habilidades</h2>
           </div>
 
-          <div className="flex flex-row gap-10">
+          <div className="flex flex-col gap-5 md:gap-10 md:flex-row">
             <CardTool
               icon={<PencilLine size={28} />}
               title="AutoCAD"
@@ -137,17 +137,17 @@ export default function Home() {
         </section>
 
         {/* Portfólio */}
-        <section className="flex flex-col gap-10 bg-stone-50 p-32 text-stone-500">
+        <section className="flex flex-col p-10 gap-10 bg-stone-50 text-stone-500 md:p-20 lg:p-32">
           <Tabs
             defaultValue="hospitalar"
             className="w-full flex flex-col gap-10 text-stone-500"
           >
-            <div className="flex flex-row justify-between items-center">
+            <div className="flex flex-col gap-5 items-start md:flex-row md:items-center md:justify-between">
               <div className="flex flex-col">
                 <span>PORTFÓLIO</span>
-                <h2 className="text-5xl text-stone-800">Projetos Acadêmicos</h2>
+                <h2 className="text-4xl md:text-5xl text-stone-800">Projetos Acadêmicos</h2>
               </div>
-              <TabsList className="opacity-100 bg-stone-100 w-fit">
+              <TabsList className="opacity-100 bg-stone-100 flex flex-col w-full items-start my-6 gap-2 md:flex-row md:my-0 md:gap-1">
                 <TabsTrigger
                   value="hospitalar"
                   className="text-stone-400 hover:text-orange-600 data-[state=active]:bg-orange-600"
@@ -171,9 +171,9 @@ export default function Home() {
 
             {/* 🔽 hospitalar */}
             <TabsContent value="hospitalar" className="mt-0 data-[state=active]:animate-in data-[state=active]:fade-in-0 data-[state=active]:slide-in-from-bottom-4 data-[state=active]:duration-500">
-              <div className="flex flex-row justify-between">
+              <div className="flex flex-col gap-10 md:flex-row md:justify-between">
                 <div>
-                  <Carousel className="w-full max-w-lg">
+                  <Carousel className="w-full lg:max-w-lg">
                     <CarouselContent>
                       <CarouselItem>
                         <Image
@@ -253,7 +253,7 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="flex flex-row gap-2">
+                  <div className="flex flex-row flex-wrap gap-2">
                     <LabelItem text="Biofilia" />
                     <LabelItem text="Madeira Cumaru" delay={0.2} />
                     <LabelItem text="Ventilação Natural" delay={0.4} />
@@ -265,7 +265,7 @@ export default function Home() {
 
             {/* 🔽 CONTEÚDO 2 */}
             <TabsContent value="residencial" className="mt-0 data-[state=active]:animate-in data-[state=active]:fade-in-0 data-[state=active]:slide-in-from-bottom-4 data-[state=active]:duration-500">
-              <div className="flex flex-row justify-between"> 
+              <div className="flex flex-col gap-6 lg:flex-row lg:justify-between"> 
                 <div className="flex flex-col">
                   <span className="text-orange-500">Casa</span>
                   <h3 className="text-3xl text-stone-800">Projeto Residencial</h3>
@@ -313,8 +313,8 @@ export default function Home() {
 
             {/* 🔽 CONTEÚDO 3 */}
             <TabsContent value="flamboyant" className="mt-0 data-[state=active]:animate-in data-[state=active]:fade-in-0 data-[state=active]:slide-in-from-bottom-4 data-[state=active]:duration-500">
-              <div className="flex flex-col gap-10 items-center">
-                <div className="flex flex-col gap-3 items-center">
+              <div className="flex flex-col gap-10 lg:items-center">
+                <div className="flex flex-col gap-3 lg:items-center">
                   <span className="text-orange-500">Parque Flamboyant</span>
                   <h3 className="text-3xl text-stone-800">Parque Flamboyant</h3>
                 </div>
