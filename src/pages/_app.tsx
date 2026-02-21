@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import { Cormorant_Garamond, Inter } from "next/font/google";
+import Head from "next/head";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -14,8 +15,14 @@ const cormorantGaramond = Cormorant_Garamond({
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <main className={`${inter.variable} ${cormorantGaramond.variable}`}>
-      <Component {...pageProps} />
-    </main>
+    <>
+      <Head>
+        <title>Layris Gorzoni</title>
+        <meta name="description" content="Projetos de Arquitetura e Urbanismo" />
+      </Head>
+      <main className={`${inter.variable} ${cormorantGaramond.variable}`}>
+        <Component {...pageProps} />
+      </main>
+    </>
   );
 }
