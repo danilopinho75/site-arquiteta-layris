@@ -34,8 +34,8 @@ export default function Home() {
     <>
       <main className="bg-stone-50 p-6 min-h-screen">
         <section
-          style={{ backgroundImage: `url(${EntradaAmbulancia.src})` }}
-          className="flex flex-col md:h-[calc(100vh-3rem)] justify-center px-10 py-30 text-orange-50 bg-cover bg-left sm:bg-center bg-no-repeat overflow-hidden relative rounded-2xl lg:px-32"
+          style={{ backgroundImage: `url(${Layris.src})` }}
+          className="flex flex-col md:h-[calc(100vh-3rem)] justify-center px-10 py-30 text-orange-50 bg-cover xl:bg-position-[center_top_-18rem] bg-no-repeat overflow-hidden relative rounded-2xl lg:px-32"
         >
           <div className="absolute inset-0 bg-linear-to-b from-black/20 to-black overflow-hidden" />
 
