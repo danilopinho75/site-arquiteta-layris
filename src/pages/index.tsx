@@ -1,7 +1,7 @@
 import { Footer } from "@/components/footer";
 import Image from "next/image";
 import Link from "next/link";
-import { Bot, PencilLine, Rotate3d } from "lucide-react";
+import { Bot, PencilLine, Rotate3d, ArrowUpRight } from "lucide-react";
 import { CardTool } from "@/components/cardTool";
 import { LabelItem } from "@/components/labelItem";
 import EntradaAmbulancia from "@/images/entrada-ambulancia.jpeg";
@@ -20,59 +20,36 @@ import { motion } from "motion/react";
 export default function Home() {
   return (
     <>
-      <section className="flex flex-col h-screen justify-center bg-stone-800 px-32 text-orange-50">
-        <div className="flex flex-col gap-5 max-w-xl">
-          <span className="text-lg text-orange-200">
-            ARQUITETURA & URBANISMO
-          </span>
-          <h1 className="text-8xl font-light text-stone-50">
-            Layris
-            <br />
-            <span className="font-light italic">Gorzoni</span>
-          </h1>
-          <p className="max-w-md">
-            Estudante do 5º ano de Arquitetura e Urbanismo — Uningá, Maringá-PR.
-            Apaixonada por design de fachadas, interiores e paisagismo.
-          </p>
-          <Link
-            href="/#sobre"
-            className="text-stone-400 font-semibold pb-1 border-b-2 border-stone-400 w-max"
-          >
-            CONHEÇA MEU TRABALHO
-          </Link>
-        </div>
-      </section>
+      <main className="bg-white p-6 min-h-screen">
+        <section
+          style={{ backgroundImage: `url(${EntradaAmbulancia.src})` }}
+          className="flex flex-col h-[calc(100vh-3rem)] justify-center px-32 text-orange-50
+        bg-cover bg-center bg-no-repeat overflow-hidden relative rounded-2xl
+      "
+        >
+          <div className="absolute inset-0 bg-linear-to-b from-black/20 to-black/100 overflow-hidden" />
 
-      <section className="flex flex-row justify-between bg-stone-50 p-32 text-stone-500">
-        <div>
-          <span className="text-lg">SOBRE</span>
-          <h2 className="text-4xl font-light text-stone-800">
-            Trajetória Acadêmica
-          </h2>
-        </div>
-
-        <div className="flex flex-col gap-10 max-w-xl">
-          <p>
-            Iniciou a graduação na Universidade Unilago, em São José do Rio
-            Preto-SP, onde cursou do 1º ao 3º ano. Durante o 3º ano, realizou
-            parte dos estudos na Unoesc, em Chapecó-SC.
-          </p>
-
-          <p>
-            No 4º ano, deu continuidade à formação na FEITEP, em Maringá-PR,
-            transferindo-se no segundo semestre para a Uningá, instituição onde
-            atualmente conclui o curso.
-          </p>
-
-          <span className="w-full h-px bg-stone-300"></span>
-
-          <div className="flex flex-col gap-3">
-            <h4 className="text-2xl text-stone-800">Áreas de interesse</h4>
-            <p>
-              Design de fachadas, design de interiores e paisagismo, com
-              interesse no desenvolvimento de mobiliário, explorando soluções
-              funcionais, estéticas e integradas ao contexto arquitetônico.
+          <div className="flex z-1 flex-col gap-5 max-w-xl">
+            <span className="text-lg text-orange-200">
+              ARQUITETURA & URBANISMO
+            </span>
+            <h1 className="text-8xl font-light text-stone-50">
+              Layris
+              <br />
+              <span className="font-light italic">Gorzoni</span>
+            </h1>
+            <p className="max-w-md">
+              Estudante do 5º ano de Arquitetura e Urbanismo — Uningá,
+              Maringá-PR. Apaixonada por design de fachadas, interiores e
+              paisagismo.
             </p>
+            <Link
+              href="/#sobre"
+              className="flex flex-row gap-2 items-center text-white font-semibold bg-orange-500 px-6 py-4 rounded-lg w-max hover:bg-orange-600 transition-all duration-400 hover:-translate-y-1"
+            >
+              <ArrowUpRight size={18} />
+              CONHEÇA MEU TRABALHO
+            </Link>
           </div>
         </div>
       </section>
