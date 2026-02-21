@@ -18,7 +18,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>Layris Gorzoni</title>
-        <meta name="description" content="Projetos de Arquitetura e Urbanismo" />
+        <meta name="description" content="Portfólio de Layris Gorzoni, estudante de Arquitetura e Urbanismo" />
       </Head>
       <main className={`${inter.variable} ${cormorantGaramond.variable}`}>
         <Component {...pageProps} />
