@@ -55,7 +55,7 @@ export default function Home() {
             </p>
             <Link
               href="/#sobre"
-              className="flex flex-row gap-2 items-center text-white font-semibold bg-orange-500 px-6 py-4 rounded-lg w-max hover:bg-orange-600 transition-all duration-400 hover:-translate-y-1"
+              className="flex flex-row gap-2 items-center text-sm md:text-base text-white font-semibold bg-orange-500 px-6 py-4 rounded-lg w-max hover:bg-orange-600 transition-all duration-400 hover:-translate-y-1"
             >
               <ArrowUpRight size={18} className="animate-pulse" />
               CONHEÇA MEU TRABALHO
