@@ -109,7 +109,9 @@ export default function Home() {
             hover:scale-105 hover:drop-shadow-2xl hover:border-4 hover:border-white transition-all duration-500 sm:h-150 lg:max-w-md lg:h-auto lg:mt-0"
           >
             <div className="px-4 py-2 bg-orange-100 rounded-2xl relative top-3 left-3 w-fit border-2 border-orange-500 shadow-2xl shadow-orange-500">
-              <p className="text-orange-600 font-semibold text-xs animate-pulse">Layris Gorzoni</p>
+              <p className="text-orange-600 font-semibold text-xs animate-pulse">
+                Layris Gorzoni
+              </p>
             </div>
           </div>
         </section>
@@ -117,18 +119,34 @@ export default function Home() {
         <section className="flex flex-col p-10 bg-orange-50 text-stone-600 items-center gap-12 rounded-2xl md:p-20 lg:p-32">
           <div className="flex flex-col gap-3 items-center">
             <span className="text-orange-500">FERRAMENTAS</span>
-            <h2 className="text-5xl text-stone-800 text-center leading-14">Software & Habilidades</h2>
+            <h2 className="text-5xl text-stone-800 text-center leading-14">
+              Software & Habilidades
+            </h2>
           </div>
 
           <div className="flex flex-col gap-5 md:gap-10 md:flex-row">
             <CardTool
-              icon={<Image src={Autocad.src} width={28} height={28} alt="Logo do AutoCAD" />}
+              icon={
+                <Image
+                  src={Autocad.src}
+                  width={28}
+                  height={28}
+                  alt="Logo do AutoCAD"
+                />
+              }
               title="AutoCAD"
               description="Desenho técnico e detalhamento de projetos exclusivos"
             />
 
             <CardTool
-              icon={<Image src={Sketchup.src} width={28} height={28} alt="Logo do SketchUp" />}
+              icon={
+                <Image
+                  src={Sketchup.src}
+                  width={28}
+                  height={28}
+                  alt="Logo do SketchUp"
+                />
+              }
               title="SketchUp"
               description="Modelagem 3D e visualização de projetos arquitetônicos"
               delay={0.3}
@@ -152,7 +170,9 @@ export default function Home() {
             <div className="flex flex-col gap-5 items-start md:flex-row md:items-center md:justify-between">
               <div className="flex flex-col">
                 <span>PORTFÓLIO</span>
-                <h2 className="text-4xl md:text-5xl text-stone-800">Projetos Acadêmicos</h2>
+                <h2 className="text-4xl md:text-5xl text-stone-800">
+                  Projetos Acadêmicos
+                </h2>
               </div>
               <TabsList className="opacity-100 bg-stone-50 md:bg-stone-100 flex flex-col w-full items-start my-6 gap-2 md:flex-row md:my-0 md:gap-1">
                 <TabsTrigger
@@ -177,7 +197,10 @@ export default function Home() {
             </div>
 
             {/* 🔽 hospitalar */}
-            <TabsContent value="hospitalar" className="mt-0 data-[state=active]:animate-in data-[state=active]:fade-in-0 data-[state=active]:slide-in-from-bottom-4 data-[state=active]:duration-500">
+            <TabsContent
+              value="hospitalar"
+              className="mt-0 data-[state=active]:animate-in data-[state=active]:fade-in-0 data-[state=active]:slide-in-from-bottom-4 data-[state=active]:duration-500"
+            >
               <div className="flex flex-col gap-10 md:flex-row md:justify-between">
                 <div>
                   <Carousel className="w-full lg:max-w-lg">
@@ -271,13 +294,63 @@ export default function Home() {
             </TabsContent>
 
             {/* 🔽 CONTEÚDO 2 */}
-            <TabsContent value="residencial" className="mt-0 data-[state=active]:animate-in data-[state=active]:fade-in-0 data-[state=active]:slide-in-from-bottom-4 data-[state=active]:duration-500">
-              <div className="flex flex-col gap-6 lg:flex-row lg:justify-between"> 
-                <div className="flex flex-col">
-                  <span className="text-orange-500">Casa</span>
-                  <h3 className="text-3xl text-stone-800">Projeto Residencial</h3>
-                </div>               
-                <Carousel className="w-full max-w-2xl">
+            <TabsContent
+              value="residencial"
+              className="mt-0 data-[state=active]:animate-in data-[state=active]:fade-in-0 data-[state=active]:slide-in-from-bottom-4 data-[state=active]:duration-500"
+            >
+              <div className="flex flex-col gap-6 lg:flex-row lg:justify-between">
+                <div className="flex flex-col max-w-lg gap-10">
+                  <div className="flex flex-col gap-2">
+                  <span className="text-orange-500">Projeto Residencial</span>
+                  <h3 className="text-3xl text-stone-800">
+                    Residência Contemporânea Unifamiliar
+                  </h3>
+                  </div>
+                  <div className="flex flex-col gap-5">
+                  <p>
+                    Projeto para família de um casal com uma filha, partir dos
+                    princípios da arquitetura contemporânea, priorizando a
+                    integração entre volumetria, materialidade e funcionalidade.
+                  </p>
+
+                  <p>
+                    A composição da fachada explora o contraste entre volumes
+                    puros e elementos horizontais marcantes, com destaque para o
+                    uso de revestimento amadeirado, que confere identidade e
+                    acolhimento à edificação.
+                  </p>
+
+                  <p>
+                    Internamente, os ambientes foram projetados para
+                    proporcionar conforto, praticidade e qualidade espacial. A
+                    área social externa integra espaço gourmet e área de
+                    convivência.
+                  </p>
+
+                  <p>
+                    O projeto de interiores valoriza a materialidade e a
+                    composição cromática, utilizando tons neutros como base e
+                    incorporando elementos naturais, como madeira e pedra,
+                    criando ambientes equilibrados e contemporâneos. O
+                    mobiliário foi pensado de forma a reforçar a funcionalidade
+                    e a identidade visual de cada espaço.
+                  </p>
+
+                  <p>
+                    O dormitório infantil foi desenvolvido com linguagem lúdica
+                    e acolhedora, incorporando cores suaves, formas orgânicas e
+                    elementos que estimulam o conforto e a identidade do
+                    usuário.
+                  </p>
+
+                  <p>
+                    A residência foi projetada buscando equilíbrio entre
+                    estética, funcionalidade e conforto, resultando em uma
+                    arquitetura contemporânea, elegante e atemporal.
+                  </p>
+                  </div>
+                </div>
+                <Carousel className="w-full">
                   <CarouselContent>
                     <CarouselItem>
                       <Image
@@ -319,7 +392,10 @@ export default function Home() {
             </TabsContent>
 
             {/* 🔽 CONTEÚDO 3 */}
-            <TabsContent value="flamboyant" className="mt-0 data-[state=active]:animate-in data-[state=active]:fade-in-0 data-[state=active]:slide-in-from-bottom-4 data-[state=active]:duration-500">
+            <TabsContent
+              value="flamboyant"
+              className="mt-0 data-[state=active]:animate-in data-[state=active]:fade-in-0 data-[state=active]:slide-in-from-bottom-4 data-[state=active]:duration-500"
+            >
               <div className="flex flex-col gap-10 lg:items-center">
                 <div className="flex flex-col gap-3 lg:items-center">
                   <span className="text-orange-500">Parque Flamboyant</span>
