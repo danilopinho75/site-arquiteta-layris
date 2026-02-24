@@ -11,6 +11,7 @@ import EntradaCarro from "@/images/entrada-de-carro.jpeg";
 import FachadaUpa from "@/images/fachada-upa.jpeg";
 import PracaPublica from "@/images/praca-publica.jpeg";
 import Layris from "@/images/layris.jpeg";
+import LayrisFotografa from "@/images/layris-fotografa.jpeg";
 import AreaChurrasco from "@/images/area-churrasco.jpeg";
 import FachadaCasa from "@/images/fachada-casa.jpeg";
 import QuartoCasa from "@/images/quarto.jpeg";
@@ -18,6 +19,8 @@ import SalaCasa from "@/images/sala.jpeg";
 import Flamboyant1 from "@/images/flamboyant-1.jpeg";
 import Flamboyant2 from "@/images/flamboyant-2.jpeg";
 import Flamboyant3 from "@/images/flamboyant-3.jpeg";
+import Sketchup from "@/images/SketchUp.png";
+import Autocad from "@/images/autocad_logo.svg";
 
 import {
   Carousel,
@@ -34,7 +37,7 @@ export default function Home() {
     <>
       <main className="bg-stone-50 p-6 min-h-screen">
         <section
-          style={{ backgroundImage: `url(${Layris.src})` }}
+          style={{ backgroundImage: `url(${LayrisFotografa.src})` }}
           className="flex flex-col md:h-[calc(100vh-3rem)] justify-center px-10 py-30 text-orange-50 bg-cover xl:bg-position-[center_top_-18rem] bg-no-repeat overflow-hidden relative rounded-2xl lg:px-32"
         >
           <div className="absolute inset-0 bg-linear-to-b from-black/20 to-black overflow-hidden" />
@@ -119,13 +122,13 @@ export default function Home() {
 
           <div className="flex flex-col gap-5 md:gap-10 md:flex-row">
             <CardTool
-              icon={<PencilLine size={28} />}
+              icon={<Image src={Autocad.src} width={28} height={28} alt="Logo do AutoCAD" />}
               title="AutoCAD"
               description="Desenho técnico e detalhamento de projetos exclusivos"
             />
 
             <CardTool
-              icon={<Rotate3d size={28} />}
+              icon={<Image src={Sketchup.src} width={28} height={28} alt="Logo do SketchUp" />}
               title="SketchUp"
               description="Modelagem 3D e visualização de projetos arquitetônicos"
               delay={0.3}
