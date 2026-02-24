@@ -154,19 +154,19 @@ export default function Home() {
               <TabsList className="opacity-100 bg-stone-50 md:bg-stone-100 flex flex-col w-full items-start my-6 gap-2 md:flex-row md:my-0 md:gap-1">
                 <TabsTrigger
                   value="hospitalar"
-                  className="text-stone-400 hover:text-orange-600 data-[state=active]:bg-orange-600"
+                  className="text-stone-400 hover:text-orange-600 data-[state=active]:bg-orange-600 data-[state=active]:text-white"
                 >
                   Projeto Hospitalar
                 </TabsTrigger>
                 <TabsTrigger
                   value="residencial"
-                  className="text-stone-400 hover:text-orange-600 data-[state=active]:bg-orange-600"
+                  className="text-stone-400 hover:text-orange-600 data-[state=active]:bg-orange-600 data-[state=active]:text-white"
                 >
                   Residencial
                 </TabsTrigger>
                 <TabsTrigger
                   value="flamboyant"
-                  className="text-stone-400  hover:text-orange-600 data-[state=active]:bg-orange-600"
+                  className="text-stone-400  hover:text-orange-600 data-[state=active]:bg-orange-600 data-[state=active]:text-white"
                 >
                   Parque Flamboyant
                 </TabsTrigger>
