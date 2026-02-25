@@ -1,7 +1,13 @@
 import { Footer } from "@/components/footer";
 import Image from "next/image";
 import Link from "next/link";
-import { Bot, PencilLine, Rotate3d, ArrowUpRight } from "lucide-react";
+import {
+  Bot,
+  ArrowUpRight,
+  Instagram,
+  Mail,
+  MessageCircle,
+} from "lucide-react";
 
 import { CardTool } from "@/components/cardTool";
 import { LabelItem } from "@/components/labelItem";
@@ -301,53 +307,54 @@ export default function Home() {
               <div className="flex flex-col gap-6 lg:flex-row lg:justify-between">
                 <div className="flex flex-col max-w-lg gap-10">
                   <div className="flex flex-col gap-2">
-                  <span className="text-orange-500">Projeto Residencial</span>
-                  <h3 className="text-3xl text-stone-800">
-                    Residência Contemporânea Unifamiliar
-                  </h3>
+                    <span className="text-orange-500">Projeto Residencial</span>
+                    <h3 className="text-3xl text-stone-800">
+                      Residência Contemporânea Unifamiliar
+                    </h3>
                   </div>
                   <div className="flex flex-col gap-5">
-                  <p>
-                    Projeto para família de um casal com uma filha, partir dos
-                    princípios da arquitetura contemporânea, priorizando a
-                    integração entre volumetria, materialidade e funcionalidade.
-                  </p>
+                    <p>
+                      Projeto para família de um casal com uma filha, partir dos
+                      princípios da arquitetura contemporânea, priorizando a
+                      integração entre volumetria, materialidade e
+                      funcionalidade.
+                    </p>
 
-                  <p>
-                    A composição da fachada explora o contraste entre volumes
-                    puros e elementos horizontais marcantes, com destaque para o
-                    uso de revestimento amadeirado, que confere identidade e
-                    acolhimento à edificação.
-                  </p>
+                    <p>
+                      A composição da fachada explora o contraste entre volumes
+                      puros e elementos horizontais marcantes, com destaque para
+                      o uso de revestimento amadeirado, que confere identidade e
+                      acolhimento à edificação.
+                    </p>
 
-                  <p>
-                    Internamente, os ambientes foram projetados para
-                    proporcionar conforto, praticidade e qualidade espacial. A
-                    área social externa integra espaço gourmet e área de
-                    convivência.
-                  </p>
+                    <p>
+                      Internamente, os ambientes foram projetados para
+                      proporcionar conforto, praticidade e qualidade espacial. A
+                      área social externa integra espaço gourmet e área de
+                      convivência.
+                    </p>
 
-                  <p>
-                    O projeto de interiores valoriza a materialidade e a
-                    composição cromática, utilizando tons neutros como base e
-                    incorporando elementos naturais, como madeira e pedra,
-                    criando ambientes equilibrados e contemporâneos. O
-                    mobiliário foi pensado de forma a reforçar a funcionalidade
-                    e a identidade visual de cada espaço.
-                  </p>
+                    <p>
+                      O projeto de interiores valoriza a materialidade e a
+                      composição cromática, utilizando tons neutros como base e
+                      incorporando elementos naturais, como madeira e pedra,
+                      criando ambientes equilibrados e contemporâneos. O
+                      mobiliário foi pensado de forma a reforçar a
+                      funcionalidade e a identidade visual de cada espaço.
+                    </p>
 
-                  <p>
-                    O dormitório infantil foi desenvolvido com linguagem lúdica
-                    e acolhedora, incorporando cores suaves, formas orgânicas e
-                    elementos que estimulam o conforto e a identidade do
-                    usuário.
-                  </p>
+                    <p>
+                      O dormitório infantil foi desenvolvido com linguagem
+                      lúdica e acolhedora, incorporando cores suaves, formas
+                      orgânicas e elementos que estimulam o conforto e a
+                      identidade do usuário.
+                    </p>
 
-                  <p>
-                    A residência foi projetada buscando equilíbrio entre
-                    estética, funcionalidade e conforto, resultando em uma
-                    arquitetura contemporânea, elegante e atemporal.
-                  </p>
+                    <p>
+                      A residência foi projetada buscando equilíbrio entre
+                      estética, funcionalidade e conforto, resultando em uma
+                      arquitetura contemporânea, elegante e atemporal.
+                    </p>
                   </div>
                 </div>
                 <Carousel className="w-full">
@@ -396,10 +403,123 @@ export default function Home() {
               value="flamboyant"
               className="mt-0 data-[state=active]:animate-in data-[state=active]:fade-in-0 data-[state=active]:slide-in-from-bottom-4 data-[state=active]:duration-500"
             >
-              <div className="flex flex-col gap-10 lg:items-center">
-                <div className="flex flex-col gap-3 lg:items-center">
-                  <span className="text-orange-500">Parque Flamboyant</span>
-                  <h3 className="text-3xl text-stone-800">Parque Flamboyant</h3>
+              <div className="flex flex-col gap-6 lg:flex-row lg:justify-between">
+                <div className="flex flex-col max-w-lg gap-10">
+                  <div className="flex flex-col gap-2">
+                    <span className="text-orange-500">Urbanismo</span>
+                    <h3 className="text-3xl text-stone-800">
+                      Parque Flamboyant - Maringá-PR
+                    </h3>
+                  </div>
+                  <div className="flex flex-col gap-8">
+                    <p>
+                      O Parque Flamboyant foi idealizado como um refúgio de paz
+                      e segurança, um verdadeiro oásis verde a poucos minutos do
+                      centro urbano, projetado para fortalecer o convívio
+                      social, o lazer ativo e a interação com a natureza local.
+                    </p>
+
+                    <div className="flex flex-col gap-4">
+                      <p className="text-md text-orange-600 font-semibold">
+                        O paisagismo é para garantir um ambiente totalmente
+                        arborizado e com riqueza ecológica:
+                      </p>
+
+                      <p>
+                        <span className="font-semibold">Beleza Imponente:</span>{" "}
+                        Nossas trilhas são ladeadas por árvores nativas
+                        majestosas, como os Ipês (Roxo e Rosa), todo caminhos
+                        com palmeiras e o imponente Angico-Vermelho, que
+                        garantem sombreamento e um espetáculo de cores em cada
+                        estação.
+                      </p>
+
+                      <p>
+                        <span className="font-semibold">Frutos e Fauna:</span>{" "}
+                        Integramos estrategicamente frutíferas como a
+                        Jabuticabeira e a Goiabeira em áreas de convívio,
+                        fornecendo alimento fresco para a fauna local e
+                        enriquecendo a experiência dos visitantes.
+                      </p>
+
+                      <p>
+                        <span className="font-semibold">
+                          A Marca do Parque:
+                        </span>{" "}
+                        O exuberante Flamboyant (Delonix regia) pontua áreas de
+                        grandes gramados, atuando como um elemento ornamental
+                        que celebra a beleza tropical.
+                      </p>
+                    </div>
+
+                    <div className="flex flex-col gap-4">
+                      <p className="text-md text-orange-600 font-semibold">
+                        Materiais de Alta Performance e Durabilidade:
+                      </p>
+
+                      <p>
+                        A segurança e a longevidade do mobiliário são
+                        prioridades, utilizando apenas materiais resistentes ao
+                        tempo e ao uso público intensivo:
+                      </p>
+
+                      <p>
+                        <span className="font-semibold">
+                          Mobiliário de Convivência:
+                        </span>{" "}
+                        Bancos e decks de contemplação são construídos em
+                        Madeira Cumaru ou Composto WPC (Madeira Plástica) de
+                        alta densidade, garantindo conforto térmico,
+                        durabilidade excepcional e resistência à umidade e
+                        cupins.
+                      </p>
+
+                      <p>
+                        O Playground possui piso de segurança Emborrachado EPDM,
+                        cumprindo todas as normas de absorção de impacto. Os
+                        brinquedos contam com estrutura metálica em Aço
+                        Galvanizado a Fogo ou Inoxidável, imunes à corrosão.
+                      </p>
+
+                      <p>
+                        <span className="font-semibold">Infraestrutura:</span>{" "}
+                        Os caminhos e as bases do quiosque e banheiros são
+                        feitos de Concreto Armado de alto desempenho,
+                        assegurando estabilidade e baixa necessidade de
+                        manutenção.
+                      </p>
+                    </div>
+
+                    <div className="flex flex-col gap-4">
+                      <p className="text-md text-orange-600 font-semibold">
+                        Lazer e diversão:
+                      </p>
+
+                      <p>
+                        <span className="font-semibold">
+                          Atividades na Natureza:
+                        </span>{" "}
+                        Ampla disponibilidade para trilhas ecológicas e áreas de
+                        piquenique/acampamento em espaços designados.
+                      </p>
+
+                      <p>
+                        <span className="font-semibold">
+                          Esporte e Lazer Ativo:
+                        </span>{" "}
+                        Campo gramado para jogos de futebol, moderno playground
+                        para as crianças e espaço pet dedicado para o convívio
+                        dos animais.
+                      </p>
+
+                      <p>
+                        <span className="font-semibold">Comodidade:</span> Nosso
+                        quiosque central e os banheiros públicos garantem o
+                        suporte necessário para atender confortavelmente toda a
+                        população.
+                      </p>
+                    </div>
+                  </div>
                 </div>
                 {/* conteúdo flamboyant */}
                 <Carousel className="w-full">
@@ -435,6 +555,94 @@ export default function Home() {
               </div>
             </TabsContent>
           </Tabs>
+        </section>
+
+        {/* Serviços */}
+        <section className="flex flex-col items-center p-10 gap-10 bg-orange-100 border border-orange-300 text-stone-500 rounded-2xl md:p-20">
+          <h2 className="text-5xl text-stone-800 text-center leading-14">
+            Serviços
+          </h2>
+          <div className="flex flex-row flex-wrap items-center justify-center gap-5 md:gap-10 lg:max-w-4xl">
+            <LabelItem text="Projeto Arquitetônico" />
+            <LabelItem text="Residencial" />
+            <LabelItem text="Design de Interiores" />
+            <LabelItem text="Projeto de Fachadas" />
+            <LabelItem text="Estudos Volumétricos e Conceituais" />
+            <LabelItem text="Paisagismo" />
+            <LabelItem text="Modelagem 3D e Renderização por IA" />
+          </div>
+        </section>
+
+        <section className="flex flex-col items-center p-10 gap-10 text-stone-500 md:p-20 lg:p-32">
+          <h2 className="text-5xl text-stone-800 text-center leading-14">
+            Conceito
+          </h2>
+          <div className="flex flex-col gap-5 max-w-3xl">
+            <p className="text-center lg:text-xl italic">
+              A arquitetura é entendida como um instrumento capaz de transformar
+              a forma como as pessoas vivem, sentem e se relacionam com o
+              espaço.
+            </p>
+
+            <p className="text-center lg:text-xl italic">
+              Cada projeto é desenvolvido com atenção aos detalhes, buscando
+              soluções contemporâneas, elegantes e funcionais.
+            </p>
+          </div>
+        </section>
+
+        <section className="flex flex-col w-full items-start md:items-center p-10 gap-5 md:gap-10 text-white bg-orange-600 md:p-20 lg:p-32 rounded-2xl">
+          <h2 className="text-5xl text-center leading-14">Contato</h2>
+
+          <div className="flex flex-col md:flex-row gap-5 md:gap-10 md:items-center justify-center font-semibold">
+            <MessageCircle
+              size={200}
+              className="text-orange-500 opacity-20 animate-pulse absolute right-20"
+            />
+
+            <Link 
+              href="https://www.instagram.com/layrisgorzone/"
+              target="_blank"
+              className="z-1 bg-orange-700 px-6 py-4 rounded-2xl flex flex-row items-center border border-orange-800 gap-2 hover:-translate-y-1.5 transition-all duration-500"
+            >
+              <Instagram
+                size={20}
+                className="hover:text-orange-400 transition-colors duration-500"
+              />
+              <span className="hover:text-orange-400 transition-colors duration-500">
+                @layrisgorzone
+              </span>
+            </Link>
+
+            <Link 
+              href="https://wa.me/17981386974"
+              target="_blank"
+              className="z-1 bg-orange-700 px-6 py-4 rounded-2xl flex flex-row items-center border border-orange-800 gap-2 hover:-translate-y-1.5 transition-all duration-500"
+            >
+              <MessageCircle
+                size={20}
+                className="hover:text-green-500 transition-colors duration-500"
+              />
+              <span className="hover:text-green-500 transition-colors duration-500">
+                Whatsapp
+              </span>
+            </Link>
+              
+
+            <Link
+              href="mailto:layris-gorzone@hotmail.com"
+              target="_blank"
+              className="z-1 bg-orange-700 px-6 py-4 rounded-2xl flex flex-row items-center border border-orange-800 gap-2 hover:-translate-y-1.5 transition-all duration-500"
+            >
+              <Mail
+                size={20}
+                className="hover:text-blue-500 transition-colors duration-500"
+              />
+              <span className="hover:text-blue-500 transition-colors duration-500">
+                layris-gorzone@hotmail.com
+              </span>
+            </Link>
+          </div>
         </section>
       </main>
 
