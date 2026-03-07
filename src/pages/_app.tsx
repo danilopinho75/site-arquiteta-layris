@@ -1,4 +1,5 @@
 import "@/styles/globals.css";
+import { Analytics } from "@vercel/analytics/next";
 import type { AppProps } from "next/app";
 import { Cormorant_Garamond, Inter } from "next/font/google";
 import Head from "next/head";
@@ -22,6 +23,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
       <main className={`${inter.variable} ${cormorantGaramond.variable}`}>
         <Component {...pageProps} />
+        <Analytics />
       </main>
     </>
   );
