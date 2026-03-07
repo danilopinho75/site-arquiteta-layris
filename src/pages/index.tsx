@@ -43,6 +43,23 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://layrisgorzoni.com.br'),
   title: 'Layris Gorzoni',
   description: 'Estudante do 5ºano de Arquitetura e Urbanismo - Layris Gorzoni',
+  keywords: [
+    "arquitetura",
+    "arquitetura e urbanismo",
+    "portfólio arquitetura",
+    "projetos arquitetônicos",
+    "arquitetura residencial",
+    "Layris Gorzoni",
+  ],
+
+  authors: [{ name: "Layris Gorzoni" }],
+  creator: "Layris Gorzoni",
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+  
   alternates: {
     canonical: "https://www.layrisgorzoni.com.br",
   },
