@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import { Footer } from "@/components/footer";
 import Image from "next/image";
 import Link from "next/link";
@@ -37,6 +38,34 @@ import {
 } from "@/components/ui/carousel";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { motion } from "motion/react";
+
+export const metadata: Metadata = {
+  title: 'Layris Gorzoni',
+  description: 'Estudante do 5ºano de Arquitetura e Urbanismo - Layris Gorzoni',
+  metadataBase: new URL('https://layrisgorzoni.com.br'),
+  openGraph: {
+    title: 'Layris Gorzoni',
+    description: 'Estudante do 5ºano de Arquitetura e Urbanismo - Layris Gorzoni',
+    url: 'https://layrisgorzoni.com.br',
+    siteName: 'layrisgorzoni.com.br',
+    locale: 'pt_BR',
+    type: "website",
+    images: [
+      {
+        url: "/imagens/layris-gorzoni.jpeg",
+        width: 800,
+        height: 600,
+        alt: 'Arquiteta Layris Gorzoni'
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Layris Gorzoni",
+    description: "Estudante de Arquitetura e Urbanismo",
+    images: ["/imagens/layris-gorzoni.jpeg"],
+  }
+} 
 
 export default function Home() {
   return (
