@@ -40,9 +40,12 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { motion } from "motion/react";
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://layrisgorzoni.com.br'),
   title: 'Layris Gorzoni',
   description: 'Estudante do 5ºano de Arquitetura e Urbanismo - Layris Gorzoni',
-  metadataBase: new URL('https://layrisgorzoni.com.br'),
+  alternates: {
+    canonical: "https://www.layrisgorzoni.com.br",
+  },
   openGraph: {
     title: 'Layris Gorzoni',
     description: 'Estudante do 5ºano de Arquitetura e Urbanismo - Layris Gorzoni',
@@ -52,18 +55,18 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/imagens/layris-gorzoni.jpeg",
+        url: "https://www.layrisgorzoni.com.br/imagens/layris-gorzoni.jpeg",
         width: 800,
         height: 600,
-        alt: 'Arquiteta Layris Gorzoni'
+        alt: 'Estudante do 5ºano de Arquitetura e Urbanismo - Layris Gorzoni'
       }
     ]
   },
   twitter: {
     card: "summary_large_image",
     title: "Layris Gorzoni",
-    description: "Estudante de Arquitetura e Urbanismo",
-    images: ["/imagens/layris-gorzoni.jpeg"],
+    description: "Estudante do 5ºano de Arquitetura e Urbanismo",
+    images: ["https://www.layrisgorzoni.com.br/imagens/layris-gorzoni.jpeg"],
   }
 } 
 
