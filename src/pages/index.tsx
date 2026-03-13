@@ -667,54 +667,58 @@ export default function Home() {
                     <Table>
                       <TableBody>
                         <TableRow>
-                          <TableCell className="font-medium">
+                          <TableCell className="font-medium whitespace-normal break-words">
                             Área total da Guarita
                           </TableCell>
-                          <TableCell>7,56 m²</TableCell>
+                          <TableCell className="whitespace-normal break-words">7,56 m²</TableCell>
                         </TableRow>
 
                         <TableRow>
-                          <TableCell className="font-medium">
+                          <TableCell className="font-medium whitespace-normal break-words">
                             Sanitário acessível
                           </TableCell>
-                          <TableCell>3,60 m²</TableCell>
+                          <TableCell className="whitespace-normal break-words">3,60 m²</TableCell>
                         </TableRow>
 
                         <TableRow>
-                          <TableCell className="font-medium">
+                          <TableCell className="font-medium whitespace-normal break-words">
                             Área total construída
                           </TableCell>
                           <TableCell>27 m²</TableCell>
                         </TableRow>
 
                         <TableRow>
-                          <TableCell className="font-medium">
+                          <TableCell className="font-medium whitespace-normal break-words">
                             Pé-direito livre
                           </TableCell>
                           <TableCell>3,00 m</TableCell>
                         </TableRow>
 
                         <TableRow>
-                          <TableCell className="font-medium">
+                          <TableCell className="font-medium whitespace-normal break-words">
                             Sistema construtivo
                           </TableCell>
-                          <TableCell>
+                          <TableCell className="whitespace-normal break-words">
                             Alvenaria estrutural com blocos de concreto
                           </TableCell>
                         </TableRow>
 
                         <TableRow>
-                          <TableCell className="font-medium">
+                          <TableCell className="font-medium whitespace-normal break-words">
                             Tipo de bloco
                           </TableCell>
-                          <TableCell>Família 14x39 cm</TableCell>
+                          <TableCell className="whitespace-normal break-words">
+                            Família 14x39 cm
+                          </TableCell>
                         </TableRow>
 
                         <TableRow>
-                          <TableCell className="font-medium">
+                          <TableCell className="font-medium whitespace-normal break-words">
                             Fornecedor referência
                           </TableCell>
-                          <TableCell>Tatu Pré-Moldados</TableCell>
+                          <TableCell className="whitespace-normal break-words">
+                            Tatu Pré-Moldados
+                          </TableCell>
                         </TableRow>
                       </TableBody>
                     </Table>
@@ -727,23 +731,25 @@ export default function Home() {
                     <Table>
                       <TableBody>
                         <TableRow>
-                          <TableCell>
+                          <TableCell className="whitespace-normal break-words">
                             Alta resistência e estabilidade estrutural
                           </TableCell>
                         </TableRow>
 
                         <TableRow>
-                          <TableCell>Agilidade na execução da obra</TableCell>
+                          <TableCell className="whitespace-normal break-words">
+                            Agilidade na execução da obra
+                          </TableCell>
                         </TableRow>
 
                         <TableRow>
-                          <TableCell>
+                          <TableCell className="whitespace-normal break-words">
                             Redução de desperdício de materiais
                           </TableCell>
                         </TableRow>
 
                         <TableRow>
-                          <TableCell>
+                          <TableCell className="whitespace-normal break-words">
                             Compatibilidade com instalações hidráulicas e
                             elétricas
                           </TableCell>
