@@ -28,6 +28,11 @@ import Flamboyant2 from "@/images/flamboyant-2.jpeg";
 import Flamboyant3 from "@/images/flamboyant-3.jpeg";
 import Sketchup from "@/images/SketchUp.png";
 import Autocad from "@/images/autocad_logo.svg";
+import Guarita01 from "@/images/guarita-01.jpeg";
+import Guarita02 from "@/images/guarita-02.jpeg";
+import Guarita03 from "@/images/guarita-03.jpeg";
+import Guarita04 from "@/images/guarita-04.jpeg";
+import Guarita05 from "@/images/guarita-05.jpeg";
 
 import {
   Carousel,
@@ -37,6 +42,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
+import { Table, TableBody, TableCell, TableRow } from "@/components/ui/table";
 import { motion } from "motion/react";
 
 export default function Home() {
@@ -53,12 +59,12 @@ export default function Home() {
         <meta property="og:title" content="Layris Gorzoni" />
         <meta
           property="og:description"
-          content="Estudante do 5º ano de Arquitetura e Urbanismo" 
+          content="Estudante do 5º ano de Arquitetura e Urbanismo"
         />
         <meta property="og:type" content="website" />
         <meta property="or:url" content="https://www.layrisgorzoni.com.br" />
 
-        <meta 
+        <meta
           property="og:image"
           content="https://www.layrisgorzoni.com.br/imagens/layris-gorzoni.jpeg"
         />
@@ -70,11 +76,10 @@ export default function Home() {
           content="Estudante de Arquitetura e Urbanismo"
         />
 
-        <meta 
+        <meta
           name="twitter:image"
           content="https://www.layrisgorzoni.com.br/imagens/layris-gorzoni.jpeg"
         />
-
       </Head>
       <main className="bg-stone-50 p-6 min-h-screen">
         <section
@@ -233,6 +238,13 @@ export default function Home() {
                   className="text-stone-400  hover:text-orange-600 data-[state=active]:bg-orange-600 data-[state=active]:text-white"
                 >
                   Parque Flamboyant
+                </TabsTrigger>
+
+                <TabsTrigger
+                  value="guarita"
+                  className="text-stone-400 hover:text-orange-600 data-[state=active]:bg-orange-600 data-[state=active]:text-white"
+                >
+                  Guarita em Alvenaria Estrutural
                 </TabsTrigger>
               </TabsList>
             </div>
@@ -589,6 +601,167 @@ export default function Home() {
                 </Carousel>
               </div>
             </TabsContent>
+
+            {/* 🔽 Guarita */}
+            <TabsContent
+              value="guarita"
+              className="mt-0 data-[state=active]:animate-in data-[state=active]:fade-in-0 data-[state=active]:slide-in-from-bottom-4 data-[state=active]:duration-500"
+            >
+              <div className="flex flex-col gap-10 md:flex-row md:justify-between">
+                <div>
+                  <Carousel className="w-full lg:max-w-lg">
+                    <CarouselContent>
+                      <CarouselItem>
+                        <Image
+                          src={Guarita01}
+                          alt=""
+                          className="w-full h-auto rounded-lg"
+                        />
+                      </CarouselItem>
+
+                      <CarouselItem>
+                        <Image
+                          src={Guarita02}
+                          alt=""
+                          className="w-full h-auto rounded-lg"
+                        />
+                      </CarouselItem>
+
+                      <CarouselItem>
+                        <Image
+                          src={Guarita03}
+                          alt=""
+                          className="w-full h-auto rounded-lg"
+                        />
+                      </CarouselItem>
+
+                      <CarouselItem>
+                        <Image
+                          src={Guarita04}
+                          alt=""
+                          className="w-full h-auto rounded-lg"
+                        />
+                      </CarouselItem>
+
+                      <CarouselItem>
+                        <Image
+                          src={Guarita05}
+                          alt=""
+                          className="w-full h-auto rounded-lg"
+                        />
+                      </CarouselItem>
+                    </CarouselContent>
+
+                    <CarouselPrevious className="bg-white text-stone-800 hover:bg-stone-100 border border-stone-200" />
+                    <CarouselNext className=" bg-white text-stone-800 hover:bg-stone-100 border border-stone-200" />
+                  </Carousel>
+                </div>
+
+                <div className="flex flex-col gap-8 max-w-xl">
+                  <div className="flex flex-col gap-4 max-w-xl">
+                    <LabelItem text="Guarita em Alvenaria Estrutural" />
+                    <h3 className="text-3xl text-orange-600 font-semibold border-b-2 border-b-orange-200 w-fit">
+                      Características Gerais:
+                    </h3>
+
+                    <Table>
+                      <TableBody>
+                        <TableRow>
+                          <TableCell className="font-medium">
+                            Área total da Guarita
+                          </TableCell>
+                          <TableCell>7,56 m²</TableCell>
+                        </TableRow>
+
+                        <TableRow>
+                          <TableCell className="font-medium">
+                            Sanitário acessível
+                          </TableCell>
+                          <TableCell>3,60 m²</TableCell>
+                        </TableRow>
+
+                        <TableRow>
+                          <TableCell className="font-medium">
+                            Área total construída
+                          </TableCell>
+                          <TableCell>27 m²</TableCell>
+                        </TableRow>
+
+                        <TableRow>
+                          <TableCell className="font-medium">
+                            Pé-direito livre
+                          </TableCell>
+                          <TableCell>3,00 m</TableCell>
+                        </TableRow>
+
+                        <TableRow>
+                          <TableCell className="font-medium">
+                            Sistema construtivo
+                          </TableCell>
+                          <TableCell>
+                            Alvenaria estrutural com blocos de concreto
+                          </TableCell>
+                        </TableRow>
+
+                        <TableRow>
+                          <TableCell className="font-medium">
+                            Tipo de bloco
+                          </TableCell>
+                          <TableCell>Família 14x39 cm</TableCell>
+                        </TableRow>
+
+                        <TableRow>
+                          <TableCell className="font-medium">
+                            Fornecedor referência
+                          </TableCell>
+                          <TableCell>Tatu Pré-Moldados</TableCell>
+                        </TableRow>
+                      </TableBody>
+                    </Table>
+                  </div>
+
+                  <div>
+                    <h3 className="text-3xl text-orange-600 font-semibold border-b-2 border-b-orange-200 w-fit mb-3">
+                      Diferenciais do Sistema:
+                    </h3>
+                    <Table>
+                      <TableBody>
+                        <TableRow>
+                          <TableCell>
+                            Alta resistência e estabilidade estrutural
+                          </TableCell>
+                        </TableRow>
+
+                        <TableRow>
+                          <TableCell>Agilidade na execução da obra</TableCell>
+                        </TableRow>
+
+                        <TableRow>
+                          <TableCell>
+                            Redução de desperdício de materiais
+                          </TableCell>
+                        </TableRow>
+
+                        <TableRow>
+                          <TableCell>
+                            Compatibilidade com instalações hidráulicas e
+                            elétricas
+                          </TableCell>
+                        </TableRow>
+
+                        <TableRow>
+                          <TableCell className="whitespace-normal break-words">
+                            Excelente custo-benefício para construções de
+                            pequeno porte como guaritas, casas técnicas e áreas
+                            administrativas
+                          </TableCell>
+                        </TableRow>
+                      </TableBody>
+                    </Table>
+                  </div>
+                </div>
+              </div>
+            </TabsContent>
           </Tabs>
         </section>
 
@@ -635,7 +808,7 @@ export default function Home() {
               className="text-orange-500 opacity-20 animate-pulse absolute right-20"
             />
 
-            <Link 
+            <Link
               href="https://www.instagram.com/layrisgorzone/"
               target="_blank"
               className="z-1 bg-orange-700 px-6 py-4 rounded-2xl flex flex-row items-center border border-orange-800 gap-2 hover:-translate-y-1.5 transition-all duration-500"
@@ -649,7 +822,7 @@ export default function Home() {
               </span>
             </Link>
 
-            <Link 
+            <Link
               href="https://wa.me/17981386974"
               target="_blank"
               className="z-1 bg-orange-700 px-6 py-4 rounded-2xl flex flex-row items-center border border-orange-800 gap-2 hover:-translate-y-1.5 transition-all duration-500"
@@ -662,7 +835,6 @@ export default function Home() {
                 Whatsapp
               </span>
             </Link>
-              
 
             <Link
               href="mailto:layris-gorzone@hotmail.com"
