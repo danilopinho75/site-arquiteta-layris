@@ -3,9 +3,10 @@ import { motion } from "motion/react";
 type LabelItemProps = {
   text: string;
   delay?: number;
+  textClassName?: string;
 };
 
-export function LabelItem({ text, delay = 0 }: LabelItemProps) {
+export function LabelItem({ text, delay = 0, textClassName = "" }: LabelItemProps) {
   return (
     <motion.div
       initial={{ y: 20, opacity: 0 }}
@@ -15,7 +16,7 @@ export function LabelItem({ text, delay = 0 }: LabelItemProps) {
     >
       <div className="bg-orange-100 px-5 py-2 border border-orange-300 rounded-full text-orange-500 w-fit hover:-translate-y-1 transition-all duration-500"
       >
-        <p className="text-xs">{text}</p>
+        <p className={`text-xs ${textClassName}`}>{text}</p>
       </div>
     </motion.div>
   );

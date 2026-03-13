@@ -659,7 +659,7 @@ export default function Home() {
 
                 <div className="flex flex-col gap-8 max-w-xl">
                   <div className="flex flex-col gap-4 max-w-xl">
-                    <LabelItem text="Guarita em Alvenaria Estrutural" />
+                    <LabelItem text="Guarita em Alvenaria Estrutural" textClassName="font-semibold" />
                     <h3 className="text-3xl text-orange-600 font-semibold border-b-2 border-b-orange-200 w-fit">
                       Características Gerais:
                     </h3>
