@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+import Head from "next/head";
 import { Footer } from "@/components/footer";
 import Image from "next/image";
 import Link from "next/link";
@@ -39,57 +39,43 @@ import {
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { motion } from "motion/react";
 
-export const metadata: Metadata = {
-  metadataBase: new URL('https://layrisgorzoni.com.br'),
-  title: 'Layris Gorzoni',
-  description: 'Estudante do 5ºano de Arquitetura e Urbanismo - Layris Gorzoni',
-  keywords: [
-    "arquitetura",
-    "arquitetura e urbanismo",
-    "portfólio arquitetura",
-    "projetos arquitetônicos",
-    "arquitetura residencial",
-    "Layris Gorzoni",
-  ],
-
-  authors: [{ name: "Layris Gorzoni" }],
-  creator: "Layris Gorzoni",
-
-  robots: {
-    index: true,
-    follow: true,
-  },
-  
-  alternates: {
-    canonical: "https://www.layrisgorzoni.com.br",
-  },
-  openGraph: {
-    title: 'Layris Gorzoni',
-    description: 'Estudante do 5ºano de Arquitetura e Urbanismo - Layris Gorzoni',
-    url: 'https://layrisgorzoni.com.br',
-    siteName: 'layrisgorzoni.com.br',
-    locale: 'pt_BR',
-    type: "website",
-    images: [
-      {
-        url: "https://www.layrisgorzoni.com.br/imagens/layris-gorzoni.jpeg",
-        width: 800,
-        height: 600,
-        alt: 'Estudante do 5ºano de Arquitetura e Urbanismo - Layris Gorzoni'
-      }
-    ]
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Layris Gorzoni",
-    description: "Estudante do 5ºano de Arquitetura e Urbanismo",
-    images: ["https://www.layrisgorzoni.com.br/imagens/layris-gorzoni.jpeg"],
-  }
-} 
-
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Layris Gorzoni</title>
+
+        <meta
+          name="description"
+          content="Estudante do 5º ano de Arquitetura e Urbanismo - Layris Gorzoni"
+        />
+
+        <meta property="og:title" content="Layris Gorzoni" />
+        <meta
+          property="og:description"
+          content="Estudante do 5º ano de Arquitetura e Urbanismo" 
+        />
+        <meta property="og:type" content="website" />
+        <meta property="or:url" content="https://www.layrisgorzoni.com.br" />
+
+        <meta 
+          property="og:image"
+          content="https://www.layrisgorzoni.com.br/imagens/layris-gorzoni.jpeg"
+        />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Layris Gorzoni" />
+        <meta
+          name="twitter:description"
+          content="Estudante de Arquitetura e Urbanismo"
+        />
+
+        <meta 
+          name="twitter:image"
+          content="https://www.layrisgorzoni.com.br/imagens/layris-gorzoni.jpeg"
+        />
+
+      </Head>
       <main className="bg-stone-50 p-6 min-h-screen">
         <section
           style={{ backgroundImage: `url(${LayrisFotografa.src})` }}
