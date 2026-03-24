@@ -294,7 +294,7 @@ export function PortfolioSection() {
                 "group text-left rounded-xl overflow-hidden border transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500",
                 isActive
                   ? "border-orange-500 shadow-lg shadow-orange-100"
-                  : "border-stone-200 hover:border-stone-300 hover:-translate-y-2 hover:shadow-lg shadow-stone-200",
+                  : "border-stone-200 hover:border-stone-300 hover:-translate-y-2 hover:shadow-lg shadow-stone-200 hover:cursor-pointer",
               ].join(" ")}
             >
               {/* Thumbnail */}
