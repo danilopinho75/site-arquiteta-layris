@@ -271,7 +271,7 @@ export function PortfolioSection() {
   }
 
   return (
-    <section className="flex flex-col p-10 gap-10 bg-stone-50 text-stone-500 md:p-20 lg:p-32">
+    <section className="flex flex-col px-2 py-10 sm:p-10 gap-10 bg-stone-50 text-stone-500 md:p-20 lg:p-32">
       {/* Header */}
       <div className="flex flex-col gap-1">
         <span className="text-xs tracking-widest uppercase text-stone-400">

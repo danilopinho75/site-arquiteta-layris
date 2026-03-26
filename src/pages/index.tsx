@@ -13,37 +13,11 @@ import {
 import { CardTool } from "@/components/cardTool";
 import { LabelItem } from "@/components/labelItem";
 
-import EntradaAmbulancia from "@/images/entrada-ambulancia.jpeg";
-import EntradaCarro from "@/images/entrada-de-carro.jpeg";
-import FachadaUpa from "@/images/fachada-upa.jpeg";
-import PracaPublica from "@/images/praca-publica.jpeg";
 import Layris from "@/images/layris.jpeg";
 import LayrisFotografa from "@/images/layris-fotografa.jpeg";
-import AreaChurrasco from "@/images/area-churrasco.jpeg";
-import FachadaCasa from "@/images/fachada-casa.jpeg";
-import QuartoCasa from "@/images/quarto.jpeg";
-import SalaCasa from "@/images/sala.jpeg";
-import Flamboyant1 from "@/images/flamboyant-1.jpeg";
-import Flamboyant2 from "@/images/flamboyant-2.jpeg";
-import Flamboyant3 from "@/images/flamboyant-3.jpeg";
 import Sketchup from "@/images/SketchUp.png";
 import Autocad from "@/images/autocad_logo.svg";
-import Guarita01 from "@/images/guarita-01.jpeg";
-import Guarita02 from "@/images/guarita-02.jpeg";
-import Guarita03 from "@/images/guarita-03.jpeg";
-import Guarita04 from "@/images/guarita-04.jpeg";
-import Guarita05 from "@/images/guarita-05.jpeg";
 
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
-import { Table, TableBody, TableCell, TableRow } from "@/components/ui/table";
-import { motion } from "motion/react";
 import { PortfolioSection } from "@/components/PortfolioSection";
 
 export default function Home() {
@@ -115,7 +89,7 @@ export default function Home() {
 
         <section
           id="sobre"
-          className="flex flex-col gap-10 bg-stone-50 px-10 py-20 text-stone-500 lg:flex-row md:p-20 lg:p-32 lg:justify-between"
+          className="flex flex-col gap-10 bg-stone-50 px-5 py-20 text-stone-500 sm:px-10 lg:flex-row md:p-20 lg:p-32 lg:justify-between"
         >
           <div>
             <span className="text-lg">SOBRE MIM</span>
